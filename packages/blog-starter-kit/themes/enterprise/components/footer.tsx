@@ -27,7 +27,7 @@ export const Footer = () => {
 
 				<p className="text-center text-slate-600 dark:text-neutral-300 mb-4">&copy; On The Code.</p>
 
-				<p className="text-center text-slate-600 dark:text-neutral-300 space-x-2">
+				{/* <p className="text-center text-slate-600 dark:text-neutral-300 space-x-2">
 					<Link href="#" className="hover:underline">
 						Privacy Policy
 					</Link>
@@ -39,7 +39,7 @@ export const Footer = () => {
 					<Link href="#" className="hover:underline">
 						Contact Me
 					</Link>
-				</p>
+				</p> */}
 			</Container>
 		</footer>
 	);
