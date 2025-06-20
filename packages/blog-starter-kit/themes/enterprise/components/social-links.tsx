@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useAppContext } from './contexts/appContext';
-import { GithubSVG, HashnodeSVG, LinkedinSVG, RssSVG, XSVG } from './icons';
+import { GithubSVG, HashnodeSVG, LinkedinSVG, RssSVG, XSVG} from './icons'
 
 export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 	const { publication } = useAppContext();

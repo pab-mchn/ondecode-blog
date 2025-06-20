@@ -31,13 +31,12 @@ export const PublicationLogo = ({ isSidebar }: { isSidebar?: boolean }) => {
 						<span className="text-2xl font-semibold text-white md:text-3xl">Blog</span>
 					</>
 				) : (
-					<span
-						className={`block text-2xl font-semibold ${
-							isSidebar ? 'text-black dark:text-white' : 'text-white md:text-4xl'
-						}`}
-					>
-						{publication.title}
-					</span>
+					<span className={`text-2xl font-semibold ${
+						isSidebar ? 'text-black dark:text-white' : 'text-white md:text-4xl'
+					  }`}>
+						{publication.title}{' '}
+						<span className="font-light text-gray-400">Blog</span>
+					  </span>
 				)}
 			</Link>
 		</h1>
