@@ -59,14 +59,13 @@ export const SubscribeForm = () => {
 				</div>
 			)}
 			{status === 'PENDING' && (
-				<div className="relative w-full p-2 text-center">
-					<p className="font-bold text-green-600 dark:text-green-500">Almost there!</p>
-					<p className="font-medium text-slate-600 dark:text-neutral-300">
-						Check your inbox for a confirmation email and click{' '}
-						<strong>&quot;Confirm and Subscribe&quot;</strong> to complete your subscription. Thanks
-						for joining us!
-					</p>
-				</div>
+			<div className="relative w-full p-2 text-center">
+			<p className="font-bold text-green-600 dark:text-green-500">¡Casi listo!</p>
+			<p className="font-medium text-slate-600 dark:text-neutral-300">
+			  Revisá tu mail para encontrar un correo de confirmación y hacé clic{' '}
+			  <strong>«Confirmar y suscribirme»</strong> para completar la suscripción. ¡Gracias por sumarte!
+			</p>
+		  </div>
 			)}
 		</>
 	);

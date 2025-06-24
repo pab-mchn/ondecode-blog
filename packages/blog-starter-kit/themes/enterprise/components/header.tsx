@@ -7,6 +7,7 @@ import { useAppContext } from './contexts/appContext';
 import HamburgerSVG from './icons/svgs/HamburgerSVG';
 import { PublicationLogo } from './publication-logo';
 import PublicationSidebar from './sidebar';
+import { SocialLinks } from './social-links';
 
 function hasUrl(
 	navbarItem: PublicationNavbarItem,
