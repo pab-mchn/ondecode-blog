@@ -2,6 +2,7 @@ import ArticleSVG from './ArticleSVG';
 import ChevronDownSVG from './ChevronDownSVG';
 import ExternalArrowSVG from './ExternalArrowSVG';
 import GithubSVG from './GithubSVG';
+import YoutubeSVG from './YoutubeSVG';
 import HashnodeSVG from './HashnodeSVG';
 import LinkedinSVG from './LinkedinSVG';
 import NewsletterPlusSVG from './NewsletterPlusSVG';
@@ -20,4 +21,5 @@ export {
 	PlusCircleSVG,
 	RssSVG,
 	XSVG,
+	YoutubeSVG
 };

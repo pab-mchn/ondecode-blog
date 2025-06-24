@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import { useAppContext } from './contexts/appContext';
-import { GithubSVG, HashnodeSVG, LinkedinSVG, RssSVG, XSVG} from './icons'
+import { GithubSVG, HashnodeSVG, LinkedinSVG, RssSVG, XSVG, YoutubeSVG} from './icons'
+
+
 
 export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 	const { publication } = useAppContext();
+
+
 	const hasSocialLinks = publication?.links
 		? !Object.values(publication.links!).every((val) => val === '')
 		: false;
@@ -38,6 +42,21 @@ export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 								<GithubSVG className="h-5 w-5 stroke-current" />
 							</a>
 						)}
+							
+						{publication.links?.github && (
+							<a
+								href='https://www.youtube.com/@onthecode'
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Find us on Github, external website, opens in new tab"
+								className="flex flex-row items-center justify-center rounded-full border border-slate-200 p-2 hover:bg-slate-100 dark:border-neutral-800 dark:hover:bg-neutral-600"
+							>
+								<YoutubeSVG className="h-5 w-5 stroke-current" />
+							</a>
+						)}
+
+
+						
 						{publication.links?.linkedin && (
 							<a
 								href={publication.links.linkedin}
