@@ -24,12 +24,12 @@ export const Avatar = ({ username, name, picture, size }: Props) => {
 				<img
 					className="block h-full w-full"
 					src={resizeImage(picture, { w: 160, h: 160, c: 'face' }, DEFAULT_AVATAR)}
-					alt={name}
+					alt={ name}
 				/>
 			</a>
 			<div className="text-base font-bold text-slate-600 dark:text-neutral-300">
 				<a href={`https://hashnode.com/@${username}`} target="_blank" rel="noopener noreferrer">
-					{name}
+					{ name}
 				</a>
 			</div>
 		</div>
